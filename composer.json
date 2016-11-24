@@ -1,5 +1,5 @@
 {
-  "name": "znck/sereno",
+  "name": "znck/sereno.in",
   "description": "Static blog generator.",
   "type": "project",
   "license": "MIT",
@@ -10,12 +10,6 @@
     }
   ],
   "require": {
-    "znck/sereno-core": "dev-master"
-  },
-  "repositories": [
-    {
-      "type": "vcs",
-      "url": "/Volumes/Znck/Workspace/project-sereno/core"
-    }
-  ]
+    "znck/sereno-core": "^0.1.0"
+  }
 }
