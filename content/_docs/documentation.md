@@ -1,3 +1,8 @@
+Prologue
+---------------
+- [Release Notes]({{ $docs_url }}/releases)
+- [Contributing]({{ $docs_url }}/contributing)
+
 Getting Started
 ---------------
 - [Installation]({{ $docs_url }}/installation)
