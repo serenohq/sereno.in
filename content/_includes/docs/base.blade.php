@@ -13,7 +13,7 @@
     <div class="docs">
         <div class="docs-wrapper container">
             <div class="row">
-                <section class="sidebar col-lg-3 hidden-md-down">
+                <section class="sidebar col-lg-3 mt-1 mb-1 hidden-md-down">
             		{!! $index !!}
             	</section>
 
