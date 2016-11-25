@@ -4,6 +4,7 @@
     ],
     'blog' => [
     	'enable_comments' => true,
+        'disqus_id' => 'sereno-1',
     ],
     'docs' => [
         'default' => 'installation',
