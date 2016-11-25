@@ -9,7 +9,7 @@ post:
 
 Simply put, its pretty cool! &#x1f60e;
 
-> ## Here a cue to write!
+> ## Here's a cue to write!
 > ## Tell us why create a personal website?
 
 Post your story with a pull request &#x1f60e;. Create the article [here](https://github.com/znck/sereno.in/edit/master/content/_blog/user-stories/).
