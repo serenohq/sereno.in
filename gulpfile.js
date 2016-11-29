@@ -1,3 +1,5 @@
+process.env.DISABLE_NOTIFIER = true;
+
 var gulp = require('gulp');
 var elixir = require('laravel-elixir');
 var argv = require('yargs').argv;
