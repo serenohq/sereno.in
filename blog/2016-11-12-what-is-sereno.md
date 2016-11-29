@@ -30,4 +30,4 @@ Till then.
 
 [Edit this article on Github][1]
 
-[1]: https://github.com/znck/sereno.in/edit/master/content/_blog/2016-11-12-what-is-sereno.md
+[1]: https://github.com/znck/sereno.in/edit/master/blog/2016-11-12-what-is-sereno.md

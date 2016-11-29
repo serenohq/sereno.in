@@ -17,7 +17,7 @@ Post your story with a pull request &#x1f60e;. Create the article [here](https:/
   <br>
 
 -- -- --
-[Edit this article on Github](https://github.com/znck/sereno.in/edit/master/content/_blog/user-stories/2016-11-15-getting-started.md)
+[Edit this article on Github](https://github.com/znck/sereno.in/edit/master/blog/user-stories/2016-11-15-getting-started.md)
 
 [1]: http://php.net/manual/en/install.php
 [2]: https://getcomposer.org
