@@ -2,5 +2,6 @@
 /vendor
 /node_modules
 /.idea
+/public
 npm-debug.log
 .DS_Store
