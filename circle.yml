@@ -20,11 +20,6 @@ test:
 
 deployment:
   publish:
+    branch: master
     commands:
       - php sereno deploy
-
-general:
-  branches:
-    ignore:
-      - gh-pages # Ignore if project website.
-#     - master # Ignore if user/organisation website.
