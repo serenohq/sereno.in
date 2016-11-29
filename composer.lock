@@ -1453,16 +1453,16 @@
         },
         {
             "name": "znck/sereno-core",
-            "version": "v0.2.3",
+            "version": "v0.2.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/znck/sereno-core.git",
-                "reference": "f6706acd4d2e3af4083d1a25dcf1a77d993da8da"
+                "reference": "bdb9e16060025064dd46101d0f2c6f3c2357d10c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/znck/sereno-core/zipball/f6706acd4d2e3af4083d1a25dcf1a77d993da8da",
-                "reference": "f6706acd4d2e3af4083d1a25dcf1a77d993da8da",
+                "url": "https://api.github.com/repos/znck/sereno-core/zipball/bdb9e16060025064dd46101d0f2c6f3c2357d10c",
+                "reference": "bdb9e16060025064dd46101d0f2c6f3c2357d10c",
                 "shasum": ""
             },
             "require": {
@@ -1504,7 +1504,7 @@
                 }
             ],
             "description": "A Static blog generator.",
-            "time": "2016-11-29 22:20:28"
+            "time": "2016-11-29 23:04:38"
         }
     ],
     "packages-dev": [],

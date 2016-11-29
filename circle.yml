@@ -23,3 +23,8 @@ deployment:
     branch: master
     commands:
       - php sereno deploy
+
+general:
+  branches:
+    ignore:
+      - gh-pages
