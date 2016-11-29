@@ -1,6 +1,6 @@
 ---
 view:
-  extends: _includes.index
+  extends: index
   yields: content
 ---
 

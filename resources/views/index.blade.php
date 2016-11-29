@@ -1,4 +1,4 @@
-@extends('_includes.base')
+@extends('base')
 
 @section('body')
     <div class="container my-1">
@@ -13,7 +13,7 @@
                 @yield('content')
             </div>
             <div class="col-xs-12 col-lg-4 offset-lg-1">
-                @include('_includes.sidebar')
+                @include('sidebar')
             </div>
         </div>
     </div>
