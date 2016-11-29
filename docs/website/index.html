@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Keep thinking your story. We are gathering the world to listen to it.">
+
+    <title> Sereno</title>
+
+    <link rel="stylesheet" href="http://sereno.in/assets/css/app.css">
+</head>
+
+<body>
+
+<nav class="navbar navbar-light border-bottom">
+    <div class="container">
+        <a class="navbar-brand" href="http://sereno.in/">
+            <img src="http://sereno.in/assets/images/logo.svg" class="sereno-logo" alt="Sereno">
+        </a>
+        <div>
+            <div class="clearfix hidden-lg-up">
+                <a role="button" class="navbar-toggler float-xs-right" data-toggle="collapse"
+                   data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+                   aria-label="Toggle navigation"></a>
+            </div>
+            <div class="collapse navbar-toggleable-md" id="navbarResponsive">
+                <ul class="nav navbar-nav float-lg-right">
+                    <li class="nav-item">
+                        <a class="nav-link " href="http://sereno.in/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="http://sereno.in/blog">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="http://sereno.in/docs">Docs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://github.com/znck/sereno" target="_blank">Github</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="http://sereno.in/about">About</a>
+                    </li>
+                </ul>
+                    <div class="docs hidden-lg-up">
+        <div class="sidebar">
+            <h1>Documentation</h1>
+            <h2>Prologue</h2>
+<ul>
+<li>
+<a href="http://sereno.in/docs/releases">Release Notes</a>
+</li>
+<li>
+<a href="http://sereno.in/docs/contributing">Contributing</a>
+</li>
+</ul>
+<h2>Getting Started</h2>
+<ul>
+<li>
+<a href="http://sereno.in/docs/installation">Installation</a>
+</li>
+<li>
+<a href="http://sereno.in/docs/directory-structure">Directory Structure</a>
+</li>
+<li>
+<a href="http://sereno.in/docs/configuration">Configuration</a>
+</li>
+</ul>
+<h2>Build Your Website</h2>
+<ul>
+<li>
+<a href="http://sereno.in/docs/website">Website</a>
+</li>
+<li>
+<a href="http://sereno.in/docs/hosting">Hosting</a>
+</li>
+</ul>
+<h2>Publish Your Blog</h2>
+<ul>
+<li>
+<a href="http://sereno.in/docs/blog">Blog</a>
+</li>
+<li>
+<a href="http://sereno.in/docs/comments">Comments</a>
+</li>
+</ul>
+<h2>Write Some Docs</h2>
+<ul>
+<li>
+<a href="http://sereno.in/docs/docs">Documentation</a>
+</li>
+</ul>
+
+        </div>
+    </div>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<div class="body" style="min-height: 70vh">
+        <div class="docs">
+        <div class="docs-wrapper container">
+            <div class="row">
+                <section class="sidebar col-lg-3 mt-1 mb-1 hidden-md-down">
+            		<h2>Prologue</h2>
+<ul>
+<li>
+<a href="http://sereno.in/docs/releases">Release Notes</a>
+</li>
+<li>
+<a href="http://sereno.in/docs/contributing">Contributing</a>
+</li>
+</ul>
+<h2>Getting Started</h2>
+<ul>
+<li>
+<a href="http://sereno.in/docs/installation">Installation</a>
+</li>
+<li>
+<a href="http://sereno.in/docs/directory-structure">Directory Structure</a>
+</li>
+<li>
+<a href="http://sereno.in/docs/configuration">Configuration</a>
+</li>
+</ul>
+<h2>Build Your Website</h2>
+<ul>
+<li>
+<a href="http://sereno.in/docs/website">Website</a>
+</li>
+<li>
+<a href="http://sereno.in/docs/hosting">Hosting</a>
+</li>
+</ul>
+<h2>Publish Your Blog</h2>
+<ul>
+<li>
+<a href="http://sereno.in/docs/blog">Blog</a>
+</li>
+<li>
+<a href="http://sereno.in/docs/comments">Comments</a>
+</li>
+</ul>
+<h2>Write Some Docs</h2>
+<ul>
+<li>
+<a href="http://sereno.in/docs/docs">Documentation</a>
+</li>
+</ul>
+
+            	</section>
+
+            	<article class="col-xs-12 col-lg-9">
+            		<h1>Website</h1>
+<ul>
+<li>
+<a href="#intro">Introduction</a>
+</li>
+<li>
+<a href="#pages">Pages</a>
+<ul>
+<li>
+<a href="#pretty">Pretty URLs</a>
+</li>
+<li>
+<a href="#index">Index Page</a>
+</li>
+<li>
+<a href="#404">404 Page</a>
+</li>
+<li>
+<a href="#nav">Navigation</a>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="intro"><a href="#intro"></a> Introduction</h2>
+<p>Sereno provides a beautiful template for your website out of the box. You have
+to write your content in Markdown files and Sereno will take care of rest.</p>
+<h2 id="pages"><a href="#pages"></a> Pages</h2>
+<p>In <code>content</code> directory, you would found two files <code>index.md</code> and <code>about.md</code>,
+these files would render to most important pages (namely the home page <code>/</code> and
+the about page <code>/about</code>) of your website.</p>
+<p>Pages are simple Markdown. For example: <code>about.md</code> file.</p>
+<pre><code class="language-markdown"><span class="line"><span class="hljs-section"># About Me</span></span>
+<span class="line"></span>
+<span class="line">This is an about me page.</span></code></pre>
+<p>You can customize using YAML at the front of the page.</p>
+<pre><code class="language-markdown"><span class="line">---</span>
+<span class="line"><span class="hljs-section">pageTitle: About Me -</span>
+<span class="line">---</span></span>
+<span class="line"></span>
+<span class="line"><span class="hljs-section"># About Me</span></span>
+<span class="line"></span>
+<span class="line">This is an about me page.</span></code></pre>
+<h4 id="pretty">Pretty URLs</h4>
+<p>Sereno creates pretty URLs for your website.</p>
+<p>For example:</p>
+<ul>
+<li>
+<code>foo.md</code> generates <code>/foo</code>
+</li>
+<li>
+<code>foo/bar.md</code> generates <code>/foo/bar</code>
+</li>
+</ul>
+<h4 id="index">Index Page</h4>
+<p>Files named <code>index.md</code> or <code>index.blade.php</code> generate an index page which is
+creates <code>/</code> link instead of <code>/index</code>.</p>
+<p>Also, there is special design for <code>content/index.md</code> to generate your home page.</p>
+<h4 id="404">404 Page</h4>
+<p>If <code>404.html</code> is present in public directory then most web server present it as
+a custom 404 (Page Not Found Error) page. Sereno is smart enough generate
+<code>404.html</code> from <code>404.md</code>.</p>
+<h4 id="nav">Navigation</h4>
+<p>Sereno has a responsive navigation bar out of the box. You can customize it
+form <code>content/_includes/base.blade.php</code>.</p>
+<p><br><br><br></p>
+<hr />
+<p><a href="https://github.com/znck/sereno.in/edit/master/content/_docs/website.md">Edit this page on Github</a></p>
+            	</article>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="clearfix"></div>
+
+<script src="http://sereno.in/assets/js/app.js" type="text/javascript"></script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-78569809-3', 'auto');
+  ga('send', 'pageview');
+</script>
+</body>
+</html>
