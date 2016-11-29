@@ -66,4 +66,4 @@ form `content/_includes/base.blade.php`.
 
 <br><br><br>
 - - - - - - - - - -
-[Edit this page on Github](https://github.com/znck/sereno.in/edit/master/content/_docs/website.md)
+[Edit this page on Github](https://github.com/znck/sereno.in/edit/master/docs/website.md)

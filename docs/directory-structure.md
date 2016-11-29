@@ -83,4 +83,4 @@ The `assets` directory contains static files like images, scripts and styles.
 
 <br><br><br>
 - - - - - - - - - - - - -
-[Edit this page on Github](https://github.com/znck/sereno.in/edit/master/content/_docs/directory-structure.md)
+[Edit this page on Github](https://github.com/znck/sereno.in/edit/master/docs/directory-structure.md)

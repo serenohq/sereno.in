@@ -27,4 +27,4 @@ under `github` option in `config.php`.
 
 <br><br><br>
 - - - - - - - - - -
-[Edit this page on Github](https://github.com/znck/sereno.in/edit/master/content/_docs/hosting.md)
+[Edit this page on Github](https://github.com/znck/sereno.in/edit/master/docs/hosting.md)

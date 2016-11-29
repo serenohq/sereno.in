@@ -15,4 +15,4 @@
 
 <br><br><br>
 - - - - - - - - - -
-[Edit this page on Github](https://github.com/znck/sereno.in/edit/master/content/_docs/blog.md)
+[Edit this page on Github](https://github.com/znck/sereno.in/edit/master/docs/blog.md)

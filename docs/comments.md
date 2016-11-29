@@ -11,4 +11,4 @@
 
 <br><br><br>
 - - - - - - - - - -
-[Edit this page on Github](https://github.com/znck/sereno.in/edit/master/content/_docs/comments.md)
+[Edit this page on Github](https://github.com/znck/sereno.in/edit/master/docs/comments.md)

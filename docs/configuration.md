@@ -13,4 +13,4 @@ options available to you.
 
 <br><br><br>
 - - - - - - - - - - - - -
-[Edit this page on Github](https://github.com/znck/sereno.in/edit/master/content/_docs/configurations.md)
+[Edit this page on Github](https://github.com/znck/sereno.in/edit/master/docs/configurations.md)
