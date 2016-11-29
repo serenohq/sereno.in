@@ -9,7 +9,7 @@ dependencies:
     - sudo apt-get update && sudo apt-get install yarn
   override:
     - composer install --dev --no-interaction
-    - yarn --production --no-progress
+    - yarn
   cache_directories:
     - "~/.yarn-cache"
     - "~/.composer/cache"
