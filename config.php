@@ -42,6 +42,7 @@
     */
     'github' => [
         'branch' => 'gh-pages',
+        'author' => 'Rahul Kadyan <hi@znck.me>',
     ],
 
     /*
