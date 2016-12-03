@@ -4,7 +4,7 @@ view:
   yields: content
 ---
 
-Sereno is a simple and powerful blog creation tool that allows
+**Sereno** is a simple and powerful blog creation tool that allows
 you to share your stories with the world. With power of Laravel's
 Blade templating engine, it creates stunning websites and blogs.
 
