@@ -14,7 +14,7 @@ is evident. With a network so powerful which gives you power to influence whole
 world at once, you can tell your story and be remembered as your true self.
 
 ## In Theory
-Sereno is a static website generator, that can generate websites, portfolios, blogs or documentations.
+**Sereno** is a static website generator, that can generate websites, portfolios, blogs or documentations.
 There are dozens of content publishing applications on the internet but we know,
 your story is unique, so should be your website/blog. Sereno wants to help you
 to put your story out for people in your own style.
