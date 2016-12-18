@@ -1,0 +1,33 @@
+siteName: Sereno
+siteDescription: Keep thinking your story. We are gathering the world to listen to it.
+github_edit_link: https://github.com/serenohq/sereno.in/edit/master
+
+github:
+  branch: gh-pages
+
+sereno:
+  url: http://sereno.in/
+  public: public
+  extensions:
+    - Sereno\Extensions\BlogExtension
+    - Sereno\Extensions\DocsExtension
+  directory:
+    - content
+  views:
+    - resources/views/
+  ignore:
+    - docs/README.md
+    - '*.map'
+  special_files:
+    - '404'
+
+blog:
+  directory: blog
+  url_prefix: /blog
+  enable_comments: true
+  disqus_id: sereno-1
+docs:
+  directory: docs
+  url_prefix: /docs
+  index: documentation
+  default: installation

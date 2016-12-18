@@ -4,6 +4,7 @@ post:
     title: What is Sereno?
     date: November 12, 2016
     brief: Keep thinking your story. We are gathering the world to listen to it.
+    pinned: true
 ---
 
 We all have our own stories, they may not be very adventurous, not very romantic, not very
@@ -27,7 +28,6 @@ Till then.
 > Keep thinking your story. We are gathering the world to listen to it.
 
 -----
+[Edit this article on Github][1]{.small}
 
-[Edit this article on Github][1]
-
-[1]: https://github.com/znck/sereno.in/edit/master/blog/2016-11-12-what-is-sereno.md
+[1]: {{ $github_edit_link }}/blog/2016-11-12-what-is-sereno.md

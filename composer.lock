@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "a51bd98ce27c4f4cc67bcba96b219160",
-    "content-hash": "53e06c9d5f5f51603cf6316d1c44b0bf",
+    "hash": "744be0dd0d228ef538826cfcbae1d9a4",
+    "content-hash": "2e2cf4715680c18e35c10bfe6bde6a8d",
     "packages": [
         {
             "name": "doctrine/inflector",
@@ -806,6 +806,62 @@
             "time": "2016-01-01 14:08:00"
         },
         {
+            "name": "sereno/core",
+            "version": "v0.3.7",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/serenohq/core.git",
+                "reference": "91b18eb2cbddece4a11db82e2306ba55766a108c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/serenohq/core/zipball/91b18eb2cbddece4a11db82e2306ba55766a108c",
+                "reference": "91b18eb2cbddece4a11db82e2306ba55766a108c",
+                "shasum": ""
+            },
+            "require": {
+                "heyupdate/emoji": "^1.0",
+                "illuminate/view": "^5.3",
+                "league/commonmark": "^0.15.1",
+                "league/commonmark-extras": "^0.1.2",
+                "satooshi/php-coveralls": "^1.0",
+                "scrivo/highlight.php": "^9.0",
+                "symfony/console": "^3.1",
+                "symfony/debug": "^3.1",
+                "symfony/event-dispatcher": "^3.1",
+                "symfony/process": "^3.1",
+                "symfony/yaml": "^3.1",
+                "webuni/commonmark-attributes-extension": "^0.5.0",
+                "webuni/commonmark-table-extension": "^0.6.0"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^1.12",
+                "mockery/mockery": "^0.9.6",
+                "phpunit/phpunit": "^5.6"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Sereno\\": "src/"
+                },
+                "files": [
+                    "src/helpers.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Rahul Kadyan",
+                    "email": "hi@znck.me"
+                }
+            ],
+            "description": "Core ",
+            "time": "2016-12-07 11:52:37"
+        },
+        {
             "name": "symfony/config",
             "version": "v3.2.0",
             "source": {
@@ -1515,6 +1571,7 @@
                 }
             ],
             "description": "A Static blog generator.",
+            "abandoned": "sereno/core",
             "time": "2016-12-04 11:10:02"
         }
     ],

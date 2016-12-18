@@ -3,11 +3,13 @@
 - [Introduction](#intro)
 - [The Root Directory](#project)
 - [The `content` Directory](#content)
-  - [The `_includes` Directory](#includes)
-    - [The `_assets` Directory](#resources)
-  - [The `_blog` Directory](#blog)
-  - [The `_docs` Directory](#docs)
-  - [The `assets` Directory](#assets)
+  - [The `assets` Directory](#static)
+- [The `resources` Directory](#resource)
+    - [The `assets` Directory](#assets)
+    - [The `views` Directory](#views)
+- [The `blog` Directory](#blog)
+- [The `docs` Directory](#docs)
+
 
 {#intro}
 ## [](#intro) Introduction
@@ -54,32 +56,35 @@ explore configurations in detail further.
 
 {#content}
 ## [](#content) The Content Directory
-The `content` directory houses your websites code. All files (excluding `_blog`,
-`_docs` and `_includes`) in this directory are treated as content for your
+The `content` directory houses your websites code. All files in this directory are treated as content for your
 website.
 
 Blade and Markdown files are rendered as pages and rest files are copied as it is.
 
-{#includes}
-#### The `_includes` Directory
-The `_includes` directory contains Blade components and resources. You can tweak
-these files to get a personalized look for your website.
-
-{#resources}
-##### The `_assets` Directory
-The `_assets` sub-directory contains Javascript and SCSS styles.
-
-{#blog}
-#### The `_blog` Directory
-The `_blog` directory provide customized rendering to produce your.
-
-{#docs}
-#### The `_docs` Directory
-The `_docs` directory produces a sleek documentation for your project.
-
-{#assets}
+{#static}
 #### The `assets` Directory
 The `assets` directory contains static files like images, scripts and styles.
+
+{#resources}
+## The Resources Directory
+The `resources` directory contains Blade components and resources. You can tweak
+these files to get a personalized look for your website.
+
+{#assets}
+##### The `assets` Directory
+The `assets` sub-directory contains Javascript and SCSS styles.
+
+{#views}
+#### The `views` Directory
+The `views` sub-directory contains overridden blade components.
+
+{#blog}
+## The Blog Directory
+The `blog` directory provide customized rendering to produce your.
+
+{#docs}
+## The Docs Directory
+The `docs` directory produces a sleek documentation for your project.
 
 <br><br><br>
 - - - - - - - - - - - - -
