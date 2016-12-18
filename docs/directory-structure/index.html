@@ -163,23 +163,26 @@
 <a href="#content">The <code>content</code> Directory</a>
 <ul>
 <li>
-<a href="#includes">The <code>_includes</code> Directory</a>
-<ul>
-<li>
-<a href="#resources">The <code>_assets</code> Directory</a>
+<a href="#static">The <code>assets</code> Directory</a>
 </li>
 </ul>
 </li>
 <li>
-<a href="#blog">The <code>_blog</code> Directory</a>
-</li>
-<li>
-<a href="#docs">The <code>_docs</code> Directory</a>
-</li>
+<a href="#resource">The <code>resources</code> Directory</a>
+<ul>
 <li>
 <a href="#assets">The <code>assets</code> Directory</a>
 </li>
+<li>
+<a href="#views">The <code>views</code> Directory</a>
+</li>
 </ul>
+</li>
+<li>
+<a href="#blog">The <code>blog</code> Directory</a>
+</li>
+<li>
+<a href="#docs">The <code>docs</code> Directory</a>
 </li>
 </ul>
 <h2 id="intro"><a href="#intro"></a> Introduction</h2>
@@ -210,21 +213,22 @@ explore configurations in detail further.</p>
 <p><code>gulpfile.js</code> controls the build process of the Sereno.</p>
 <p><code>sereno</code> provides a command line interface for Sereno.</p>
 <h2 id="content"><a href="#content"></a> The Content Directory</h2>
-<p>The <code>content</code> directory houses your websites code. All files (excluding <code>_blog</code>,
-<code>_docs</code> and <code>_includes</code>) in this directory are treated as content for your
+<p>The <code>content</code> directory houses your websites code. All files in this directory are treated as content for your
 website.</p>
 <p>Blade and Markdown files are rendered as pages and rest files are copied as it is.</p>
-<h4 id="includes">The <code>_includes</code> Directory</h4>
-<p>The <code>_includes</code> directory contains Blade components and resources. You can tweak
-these files to get a personalized look for your website.</p>
-<h5 id="resources">The <code>_assets</code> Directory</h5>
-<p>The <code>_assets</code> sub-directory contains Javascript and SCSS styles.</p>
-<h4 id="blog">The <code>_blog</code> Directory</h4>
-<p>The <code>_blog</code> directory provide customized rendering to produce your.</p>
-<h4 id="docs">The <code>_docs</code> Directory</h4>
-<p>The <code>_docs</code> directory produces a sleek documentation for your project.</p>
-<h4 id="assets">The <code>assets</code> Directory</h4>
+<h4 id="static">The <code>assets</code> Directory</h4>
 <p>The <code>assets</code> directory contains static files like images, scripts and styles.</p>
+<h2 id="resources">The Resources Directory</h2>
+<p>The <code>resources</code> directory contains Blade components and resources. You can tweak
+these files to get a personalized look for your website.</p>
+<h5 id="assets">The <code>assets</code> Directory</h5>
+<p>The <code>assets</code> sub-directory contains Javascript and SCSS styles.</p>
+<h4 id="views">The <code>views</code> Directory</h4>
+<p>The <code>views</code> sub-directory contains overridden blade components.</p>
+<h2 id="blog">The Blog Directory</h2>
+<p>The <code>blog</code> directory provide customized rendering to produce your.</p>
+<h2 id="docs">The Docs Directory</h2>
+<p>The <code>docs</code> directory produces a sleek documentation for your project.</p>
 <p><br><br><br></p>
 <hr />
 <p><a href="https://github.com/znck/sereno.in/edit/master/docs/directory-structure.md">Edit this page on Github</a></p>

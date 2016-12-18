@@ -159,10 +159,241 @@
 </ul>
 <h2 id="intro"><a href="#intro"></a> Introduction</h2>
 <p>All of the configuration files in the root directory. The default config file is
-<code>config.php</code> is always loaded. Environment specific config files (e.g.:
-<code>config.dev.php</code>) can override any option in the default file. Each option is
+<code>config.yml</code> is always loaded. Environment specific config files (e.g.:
+<code>config.dev.yml</code>) can override any option in the default file. Each option is
 documented, so feel free to look through the files and get familiar with the
 options available to you.</p>
+<p>Here is the default config file included with sereno.</p>
+<pre><code class="language-yml"><span class="line"><span class="hljs-comment">#--------------------------------------------------------------------------</span></span>
+<span class="line"><span class="hljs-comment"># Website Name</span></span>
+<span class="line"><span class="hljs-comment">#--------------------------------------------------------------------------</span></span>
+<span class="line"><span class="hljs-comment">#</span></span>
+<span class="line"><span class="hljs-comment"># This value is the name of your website. This value is used to Created</span></span>
+<span class="line"><span class="hljs-comment"># title for each page. It is also used in navigation bar. For personal</span></span>
+<span class="line"><span class="hljs-comment"># website, it should be set to your full name, (e.g. Rahul Kadyan).</span></span>
+<span class="line"><span class="hljs-comment">#</span></span>
+<span class="line"><span class="hljs-attr">siteName:</span> My Serene Website</span>
+<span class="line"></span>
+<span class="line"><span class="hljs-comment">#--------------------------------------------------------------------------</span></span>
+<span class="line"><span class="hljs-comment"># Website Description</span></span>
+<span class="line"><span class="hljs-comment">#--------------------------------------------------------------------------</span></span>
+<span class="line"><span class="hljs-comment">#</span></span>
+<span class="line"><span class="hljs-comment"># This value is the short description of your website. This value is</span></span>
+<span class="line"><span class="hljs-comment"># used to provide meta information to search engines or websites.</span></span>
+<span class="line"><span class="hljs-comment"># Try to keep it short (upto 200 characters) and simple.</span></span>
+<span class="line"><span class="hljs-comment">#</span></span>
+<span class="line"><span class="hljs-attr">siteDescription:</span> My space on the internet - another Sereno website.</span>
+<span class="line"></span>
+<span class="line"><span class="hljs-comment">#--------------------------------------------------------------------------</span></span>
+<span class="line"><span class="hljs-comment"># Github Pages</span></span>
+<span class="line"><span class="hljs-comment">#--------------------------------------------------------------------------</span></span>
+<span class="line"><span class="hljs-comment">#</span></span>
+<span class="line"><span class="hljs-comment"># Use Github Pages to publish your website for free.</span></span>
+<span class="line"><span class="hljs-comment">#</span></span>
+<span class="line"><span class="hljs-attr">github:</span></span>
+<span class="line">    <span class="hljs-comment">#----------------------------------------------------------------------</span></span>
+<span class="line">    <span class="hljs-comment"># Repository</span></span>
+<span class="line">    <span class="hljs-comment">#----------------------------------------------------------------------</span></span>
+<span class="line">    <span class="hljs-comment">#</span></span>
+<span class="line">    <span class="hljs-comment"># The `repository` where the project is hosted.</span></span>
+<span class="line">    <span class="hljs-comment">#</span></span>
+<span class="line">    <span class="hljs-comment"># repository: git@github.com:user/repository.git</span></span>
+<span class="line"></span>
+<span class="line">    <span class="hljs-comment">#----------------------------------------------------------------------</span></span>
+<span class="line">    <span class="hljs-comment"># Branch</span></span>
+<span class="line">    <span class="hljs-comment">#----------------------------------------------------------------------</span></span>
+<span class="line">    <span class="hljs-comment">#</span></span>
+<span class="line">    <span class="hljs-comment"># The `branch` value is used to publish your website on Github Pages.</span></span>
+<span class="line">    <span class="hljs-comment">#</span></span>
+<span class="line">    <span class="hljs-comment"># Possible values for `branch`:</span></span>
+<span class="line">    <span class="hljs-comment">#   - master</span></span>
+<span class="line">    <span class="hljs-comment">#     For your personal website.</span></span>
+<span class="line">    <span class="hljs-comment">#     Name of the repository is `&lt;your github username&gt;.github.io`.</span></span>
+<span class="line">    <span class="hljs-comment">#     Your default working branch should be 'dev'.</span></span>
+<span class="line">    <span class="hljs-comment">#</span></span>
+<span class="line">    <span class="hljs-comment">#   - gh-pages</span></span>
+<span class="line">    <span class="hljs-comment">#     For project website.</span></span>
+<span class="line">    <span class="hljs-comment">#     Your default working branch should be 'master'.</span></span>
+<span class="line">    <span class="hljs-comment">#</span></span>
+<span class="line"><span class="hljs-attr">    branch:</span> gh-pages</span>
+<span class="line"></span>
+<span class="line"><span class="hljs-comment">#--------------------------------------------------------------------------</span></span>
+<span class="line"><span class="hljs-comment"># Markdown Configuration for Website</span></span>
+<span class="line"><span class="hljs-comment">#--------------------------------------------------------------------------</span></span>
+<span class="line"><span class="hljs-comment">#</span></span>
+<span class="line"><span class="hljs-comment"># The `extends` value sets the parent blade component for the markdown</span></span>
+<span class="line"><span class="hljs-comment"># renderer. And `yields` value places the content in the designated</span></span>
+<span class="line"><span class="hljs-comment"># place on the parent blade component.</span></span>
+<span class="line"><span class="hljs-comment">#</span></span>
+<span class="line"><span class="hljs-attr">view:</span></span>
+<span class="line"><span class="hljs-attr">    extends:</span> markdown</span>
+<span class="line"><span class="hljs-attr">    yields:</span> markdown-body</span>
+<span class="line"></span>
+<span class="line"><span class="hljs-comment">#--------------------------------------------------------------------------</span></span>
+<span class="line"><span class="hljs-comment"># Blog</span></span>
+<span class="line"><span class="hljs-comment">#--------------------------------------------------------------------------</span></span>
+<span class="line"><span class="hljs-comment">#</span></span>
+<span class="line"><span class="hljs-comment"># These settings are used to properly generate your  blog  using Sereno.</span></span>
+<span class="line"><span class="hljs-comment"># If _blog directory is present in the `content` directory, then the</span></span>
+<span class="line"><span class="hljs-comment"># blog is generated automatically.</span></span>
+<span class="line"><span class="hljs-comment">#</span></span>
+<span class="line"><span class="hljs-attr">blog:</span></span>
+<span class="line">    <span class="hljs-comment">#----------------------------------------------------------------------</span></span>
+<span class="line">    <span class="hljs-comment"># Directory</span></span>
+<span class="line">    <span class="hljs-comment">#----------------------------------------------------------------------</span></span>
+<span class="line">    <span class="hljs-comment">#</span></span>
+<span class="line">    <span class="hljs-comment"># Here you may specify which directory (relative to content) to use</span></span>
+<span class="line">    <span class="hljs-comment"># for generating your blog.</span></span>
+<span class="line">    <span class="hljs-comment">#</span></span>
+<span class="line"><span class="hljs-attr">    directory:</span> blog</span>
+<span class="line"></span>
+<span class="line">    <span class="hljs-comment">#----------------------------------------------------------------------</span></span>
+<span class="line">    <span class="hljs-comment"># URL prefix</span></span>
+<span class="line">    <span class="hljs-comment">#----------------------------------------------------------------------</span></span>
+<span class="line">    <span class="hljs-comment">#</span></span>
+<span class="line">    <span class="hljs-comment"># Pages generated by Blog builder are prefixed with this value.</span></span>
+<span class="line">    <span class="hljs-comment">#</span></span>
+<span class="line"><span class="hljs-attr">    url_prefix:</span> blog</span>
+<span class="line"></span>
+<span class="line">    <span class="hljs-comment">#----------------------------------------------------------------------</span></span>
+<span class="line">    <span class="hljs-comment"># Articles Per Page</span></span>
+<span class="line">    <span class="hljs-comment">#----------------------------------------------------------------------</span></span>
+<span class="line">    <span class="hljs-comment">#</span></span>
+<span class="line">    <span class="hljs-comment"># Blog builder creates an index of your articles, listed on the</span></span>
+<span class="line">    <span class="hljs-comment"># landing page of your blog. This value controls number of articles</span></span>
+<span class="line">    <span class="hljs-comment"># listed per page of the index.</span></span>
+<span class="line">    <span class="hljs-comment">#</span></span>
+<span class="line"><span class="hljs-attr">    postsPerPage:</span> <span class="hljs-number">15</span></span>
+<span class="line"></span>
+<span class="line">    <span class="hljs-comment">#----------------------------------------------------------------------</span></span>
+<span class="line">    <span class="hljs-comment"># Markdown Configuration for Articles</span></span>
+<span class="line">    <span class="hljs-comment">#----------------------------------------------------------------------</span></span>
+<span class="line">    <span class="hljs-comment">#</span></span>
+<span class="line">    <span class="hljs-comment"># Use these configurations for markdown pages in blog.</span></span>
+<span class="line">    <span class="hljs-comment">#</span></span>
+<span class="line"><span class="hljs-attr">    post:</span></span>
+<span class="line"><span class="hljs-attr">        extends:</span> blog.post</span>
+<span class="line"><span class="hljs-attr">        yields:</span> post-content</span>
+<span class="line"></span>
+<span class="line">    <span class="hljs-comment">#----------------------------------------------------------------------</span></span>
+<span class="line">    <span class="hljs-comment"># Disqus Comments</span></span>
+<span class="line">    <span class="hljs-comment">#----------------------------------------------------------------------</span></span>
+<span class="line">    <span class="hljs-comment">#</span></span>
+<span class="line">    <span class="hljs-comment"># You can add comments to your blog articles. Set `enable_comments` to</span></span>
+<span class="line">    <span class="hljs-comment"># true and put your Disqus site ID in `disqus_id`.</span></span>
+<span class="line">    <span class="hljs-comment">#</span></span>
+<span class="line"><span class="hljs-attr">    enable_comments:</span> <span class="hljs-literal">true</span></span>
+<span class="line"><span class="hljs-attr">    disqus_id:</span> <span class="hljs-string">''</span></span>
+<span class="line"></span>
+<span class="line"><span class="hljs-comment">#--------------------------------------------------------------------------</span></span>
+<span class="line"><span class="hljs-comment"># Documentation</span></span>
+<span class="line"><span class="hljs-comment">#--------------------------------------------------------------------------</span></span>
+<span class="line"><span class="hljs-comment">#</span></span>
+<span class="line"><span class="hljs-comment"># These settings are used to properly generate documentation using Sereno.</span></span>
+<span class="line"><span class="hljs-comment"># If docs directory is present in the `content` directory, then the</span></span>
+<span class="line"><span class="hljs-comment"># docs are generated automatically.</span></span>
+<span class="line"><span class="hljs-comment">#</span></span>
+<span class="line"><span class="hljs-attr">docs:</span></span>
+<span class="line">    <span class="hljs-comment">#----------------------------------------------------------------------</span></span>
+<span class="line">    <span class="hljs-comment"># Directory</span></span>
+<span class="line">    <span class="hljs-comment">#----------------------------------------------------------------------</span></span>
+<span class="line">    <span class="hljs-comment">#</span></span>
+<span class="line">    <span class="hljs-comment"># Here you may specify which directory (relative to content) to use</span></span>
+<span class="line">    <span class="hljs-comment"># for generating your docs.</span></span>
+<span class="line">    <span class="hljs-comment">#</span></span>
+<span class="line"><span class="hljs-attr">    directory:</span> docs</span>
+<span class="line"></span>
+<span class="line">    <span class="hljs-comment">#----------------------------------------------------------------------</span></span>
+<span class="line">    <span class="hljs-comment"># URL prefix</span></span>
+<span class="line">    <span class="hljs-comment">#----------------------------------------------------------------------</span></span>
+<span class="line">    <span class="hljs-comment">#</span></span>
+<span class="line">    <span class="hljs-comment"># Pages generated by docs builder are prefixed with this value.</span></span>
+<span class="line">    <span class="hljs-comment">#</span></span>
+<span class="line"><span class="hljs-attr">    url_prefix:</span> docs</span>
+<span class="line"></span>
+<span class="line">    <span class="hljs-comment">#----------------------------------------------------------------------</span></span>
+<span class="line">    <span class="hljs-comment"># Index</span></span>
+<span class="line">    <span class="hljs-comment">#----------------------------------------------------------------------</span></span>
+<span class="line">    <span class="hljs-comment">#</span></span>
+<span class="line">    <span class="hljs-comment"># This file is used to generate sidebar for docs page.</span></span>
+<span class="line">    <span class="hljs-comment">#</span></span>
+<span class="line"><span class="hljs-attr">    index:</span> documentation</span>
+<span class="line"></span>
+<span class="line">    <span class="hljs-comment">#----------------------------------------------------------------------</span></span>
+<span class="line">    <span class="hljs-comment"># Markdown Configuration for Documentation</span></span>
+<span class="line">    <span class="hljs-comment">#----------------------------------------------------------------------</span></span>
+<span class="line">    <span class="hljs-comment">#</span></span>
+<span class="line">    <span class="hljs-comment"># Docs pages have a different style (inspired &amp; stolen from Laravel).</span></span>
+<span class="line">    <span class="hljs-comment">#</span></span>
+<span class="line"><span class="hljs-attr">    extends:</span> docs.base</span>
+<span class="line"><span class="hljs-attr">    yields:</span> doc_content</span>
+<span class="line"></span>
+<span class="line">    <span class="hljs-comment">#----------------------------------------------------------------------</span></span>
+<span class="line">    <span class="hljs-comment"># Docs Landing Page</span></span>
+<span class="line">    <span class="hljs-comment">#----------------------------------------------------------------------</span></span>
+<span class="line">    <span class="hljs-comment">#</span></span>
+<span class="line">    <span class="hljs-comment"># Here you may specify which file to load by default if user visits</span></span>
+<span class="line">    <span class="hljs-comment"># docs landing page.</span></span>
+<span class="line">    <span class="hljs-comment">#</span></span>
+<span class="line"><span class="hljs-attr">    default:</span> installation</span>
+<span class="line"></span>
+<span class="line"><span class="hljs-attr">sereno:</span></span>
+<span class="line">    <span class="hljs-comment">#----------------------------------------------------------------------</span></span>
+<span class="line">    <span class="hljs-comment"># Website URL</span></span>
+<span class="line">    <span class="hljs-comment">#----------------------------------------------------------------------</span></span>
+<span class="line">    <span class="hljs-comment">#</span></span>
+<span class="line">    <span class="hljs-comment"># This URL is used by the Sereno to properly generate URLs when using</span></span>
+<span class="line">    <span class="hljs-comment"># the building the website. You should set this to the root of your</span></span>
+<span class="line">    <span class="hljs-comment"># website so that it is generates correct URLs for pages &amp; assets.</span></span>
+<span class="line">    <span class="hljs-comment">#</span></span>
+<span class="line"><span class="hljs-attr">    url:</span> /</span>
+<span class="line"></span>
+<span class="line">    <span class="hljs-comment">#----------------------------------------------------------------------</span></span>
+<span class="line">    <span class="hljs-comment"># Extensions</span></span>
+<span class="line">    <span class="hljs-comment">#----------------------------------------------------------------------</span></span>
+<span class="line">    <span class="hljs-comment">#</span></span>
+<span class="line">    <span class="hljs-comment"># Extensions add functionalities to Sereno. `DefaultExtension` provides</span></span>
+<span class="line">    <span class="hljs-comment"># all the features offered by Sereno.</span></span>
+<span class="line">    <span class="hljs-comment">#</span></span>
+<span class="line"><span class="hljs-attr">    extensions:</span></span>
+<span class="line"><span class="hljs-bullet">        -</span> Znck\Sereno\DefaultExtension::class,</span>
+<span class="line"></span>
+<span class="line">    <span class="hljs-comment">#----------------------------------------------------------------------</span></span>
+<span class="line">    <span class="hljs-comment"># Website Content Directories</span></span>
+<span class="line">    <span class="hljs-comment">#----------------------------------------------------------------------</span></span>
+<span class="line">    <span class="hljs-comment">#</span></span>
+<span class="line">    <span class="hljs-comment"># These directories would be searched recursively to generate your</span></span>
+<span class="line">    <span class="hljs-comment"># website.</span></span>
+<span class="line">    <span class="hljs-comment">#</span></span>
+<span class="line"><span class="hljs-attr">    directory:</span></span>
+<span class="line"><span class="hljs-bullet">        -</span> content</span>
+<span class="line"></span>
+<span class="line">    <span class="hljs-comment">#----------------------------------------------------------------------</span></span>
+<span class="line">    <span class="hljs-comment"># Views</span></span>
+<span class="line">    <span class="hljs-comment">#----------------------------------------------------------------------</span></span>
+<span class="line">    <span class="hljs-comment">#</span></span>
+<span class="line">    <span class="hljs-comment"># Override default views from themes.</span></span>
+<span class="line">    <span class="hljs-comment">#</span></span>
+<span class="line"><span class="hljs-attr">    views:</span></span>
+<span class="line"><span class="hljs-bullet">        -</span> resources/views</span>
+<span class="line"></span>
+<span class="line">    <span class="hljs-comment">#----------------------------------------------------------------------</span></span>
+<span class="line">    <span class="hljs-comment"># Special Files</span></span>
+<span class="line">    <span class="hljs-comment">#----------------------------------------------------------------------</span></span>
+<span class="line">    <span class="hljs-comment">#</span></span>
+<span class="line">    <span class="hljs-comment"># Preserve names of these files.</span></span>
+<span class="line">    <span class="hljs-comment">#</span></span>
+<span class="line"><span class="hljs-attr">    special_files:</span></span>
+<span class="line"><span class="hljs-bullet">        -</span> <span class="hljs-string">'404'</span></span>
+<span class="line"></span>
+<span class="line">    <span class="hljs-comment">#----------------------------------------------------------------------</span></span>
+<span class="line">    <span class="hljs-comment"># Ignored Files</span></span>
+<span class="line">    <span class="hljs-comment">#----------------------------------------------------------------------</span></span>
+<span class="line">    <span class="hljs-comment">#</span></span>
+<span class="line">    <span class="hljs-comment"># These files won't appear in your generated website.</span></span>
+<span class="line">    <span class="hljs-comment">#</span></span>
+<span class="line"><span class="hljs-attr">    ignore:</span></span>
+<span class="line"><span class="hljs-bullet">      -</span> .DS_Store</span></code></pre>
 <p><br><br><br></p>
 <hr />
 <p><a href="https://github.com/znck/sereno.in/edit/master/docs/configurations.md">Edit this page on Github</a></p>
