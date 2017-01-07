@@ -54,4 +54,4 @@ developing. Launch development server by issuing following NPM or Yarn command:
 
 <br><br><br>
 - - - - - - - - - -
-[Edit this page on Github](https://github.com/znck/sereno.in/edit/master/docs/installation.md)
+[Edit this page on Github](https://github.com/znck/sereno.in/edit/master/docs/installation.md) [Directory Structure](@url('directory-structure')){.float-right}
