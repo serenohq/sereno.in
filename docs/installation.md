@@ -19,7 +19,7 @@ before using Sereno make sure you have composer installed on your machine.
 
 Install Sereno by issuing the Composer `create-project` command in your terminal:
 
-    composer create-project --prefer-dist znck/sereno blog
+    composer create-project --prefer-dist sereno/core blog
 
 #### Post Installation
 Sereno uses [Gulp](#) to build resources. So, make sure you have Node installed
